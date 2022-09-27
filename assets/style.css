@@ -23,7 +23,7 @@
     padding-top: 15px;
 }
 
-.nav1{
+.navElement{
     padding:4px;
     margin:4px;
     font-size: large;
@@ -31,7 +31,6 @@
 
 a:link, a:visited, a:hover, a:active {
     color: lightblue;
-    background-color: transparent;
 }
 
 /*Subtitle styling*/
@@ -63,7 +62,7 @@ a:link, a:visited, a:hover, a:active {
 
 /*About me section styling*/
 
-.leftTitle {
+.leftHeading {
     font-size: xx-large;
 }
 
@@ -72,14 +71,14 @@ a:link, a:visited, a:hover, a:active {
     margin: 10px;
 }
 
-.aboutMe-item-a {
+.aboutMe-title {
     flex: 20%;
     border-right: 2px solid black;
     text-align: right;  
     padding: 12px;
 }
 
-.aboutMe-item-b {
+.aboutMe-text {
     flex: 80%;
     text-align: left;
     padding: 10px;
@@ -92,168 +91,69 @@ a:link, a:visited, a:hover, a:active {
     margin: 10px;
 }
 
-.work-item-a {
-    width: 20%;
+.work-title {
+    flex: 20%;
     border-right: 2px solid black;
     text-align: right;
     padding: 10px;
-    padding-right: 11px;
 }
 
 .work-image-container {
-    
     display: flex;
-    width: 80%;
+    flex: 80%;
     flex-wrap: wrap;
 }
 
 .work-big-img {
     position: relative;
-    text-align: center;
     display: flex;
-    width:98%;
-    margin: 5px;
-    
+    width:100%;
+    padding: 5px;
 }
 
-.work-small-img1 {
+.work-small-img {
     position: relative;
-    text-align: center;
     display: flex;
     width:49%;
-    margin-left: 2px;
-    margin: 5px;
-    
+    padding: 5px;
 }
+
 
 .image-class {
     width:100%;
     height: auto;
-    border:2px solid green;
-    margin: 5px 5px 5px 5px;
+    object-fit:contain;
 }
 
-.work-small-img2 {
-   position: relative;
-    text-align: center;
-    display: flex;
-    width:49%;
-    margin:5px;
-}
 .text-block {
     position: absolute;
     bottom:20px;
     left:10px;
-    background-color: aqua;
+    background-color: lightblue;
+    line-height: 5px;
 }
+
+/*Contact Me*/
+
 .contactMe-container {
     display: flex;
     margin: 10px;
 }
 
-.contactMe-item-a {
+.contactMe-title {
     flex: 20%;
     border-right: 2px solid black;
     text-align: right;
-    padding: 10px;
-    display: flex;
-    
+    padding: 15px;
 }
+
 .contactMe-item {
-    display:flex;
     flex: 16%;
     padding: 5px;
     text-align: center;
+    align-self: center;
 }
-/* Cards are split into two columns at 992px or smaller */
-@media screen and (max-width: 992px) {
-    .header-nav {
-        
-        justify-content: center;
-    }
-    .header-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .aboutMe-container {
-        flex-direction: column;
-    }
-    .aboutMe-item-a {
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-    }
-    .work-container{
-        flex-direction: column;
-        
-    }
-    .work-item-a {
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-    }
-    
 
-    .contactMe-container {
-        flex-direction: column;
-    }
-    .contactMe-item-a{
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-        display: inline;
-        flex-direction: row;
-
-    }
-    .contactMe-item {
-        flex-direction: row;
-    }
-  
-
-@media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-
-    .header-nav {
-        
-        justify-content: center;
-    }
-    .header-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .aboutMe-container {
-        flex-direction: column;
-    }
-    .aboutMe-item-a {
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-    }
-    .work-container{
-        flex-direction: column;
-        
-    }
-    
-    .work-item-a {
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-    }
-    .work-small-img1 {
-        width:100%;
-    }
-    .work-small-img2 {
-        width:100%;
-    }
-    .contactMe-container {
-        flex-direction: column;
-    }
-    .contactMe-item-a{
-        text-align: left;
-        border-bottom: 2px solid black;
-        border-right: 0px;
-
-    }
-    
+a.contactMe-Link:link, a.contactMe-Link:visited, a.contactMe-Link:hover, a.contactMe-Link:active {
+    color: black;
+}
