@@ -157,3 +157,132 @@ a:link, a:visited, a:hover, a:active {
 a.contactMe-Link:link, a.contactMe-Link:visited, a.contactMe-Link:hover, a.contactMe-Link:active {
     color: black;
 }
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .leftHeading {
+        margin-bottom: 5px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-nav {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .aboutMe-container {
+        flex-direction: column;
+    }
+
+    .aboutMe-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+
+    .work-container {
+        flex-direction: column;
+    }
+
+    .work-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+
+    .work-image-container {
+        flex-direction: row;
+    }
+
+    .contactMe-container {
+        flex-wrap: wrap;
+    }
+
+    .contactMe-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+        flex: 100%;
+    }
+
+    .contactMe-item {
+        padding-top: 10px;
+    }
+
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .leftHeading {
+        margin-bottom: 5px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .subtitle-block {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #subtitle-text {
+        text-align: center;
+    }
+    
+    .aboutMe-container {
+        flex-direction: column;
+    }
+
+    .aboutMe-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+
+    .work-container {
+        flex-direction: column;
+    }
+
+    .work-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+
+    .work-small-img {
+        flex:100%;
+    }
+
+    .contactMe-container {
+        flex-direction: column;
+    }
+
+    .contactMe-title {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        text-align: left;
+        
+    }
+    .contactMe-item {
+        text-align: left;
+        align-self: flex-start;
+        padding-top: 10px;
+    }
+}
