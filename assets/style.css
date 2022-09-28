@@ -95,34 +95,32 @@ a:link, a:visited, a:hover, a:active {
     flex: 20%;
     border-right: 2px solid black;
     text-align: right;
-    padding: 10px;
+    padding: 13px;
 }
 
 .work-image-container {
     display: flex;
     flex: 80%;
     flex-wrap: wrap;
+    margin: 15px;
 }
 
 .work-big-img {
     position: relative;
     display: flex;
     width:100%;
-    padding: 5px;
 }
 
 .work-small-img {
     position: relative;
     display: flex;
     width:49%;
-    padding: 5px;
+    margin-right:5px;
 }
 
-
 .image-class {
-    width:100%;
+    max-width:100%;
     height: auto;
-    object-fit:contain;
 }
 
 .text-block {
